@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lo'veaT</title>
+
+    <!-- 폰트 설정 -->
+    <style> 
+      .fNM {font-family: 'Nanum Myeongjo', serif;}
+      .nav-tabs > .nav-item > .active {
+  color: #4F6F52 !important;
+  background-color: #bfbfbf !important; }  
+
+  .dropdown-item:hover {
+    background-color: #4F6F52 !important; /* 마우스 오버 시 배경 색상 변경 */
+    color: #ffffff !important; /* 마우스 오버 시 텍스트 색상 변경 */
+  }
+  .navbar-nav .nav-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+    </style>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+
+<body class="z-0" style="background-color: #dfdfdf;">
+    <!-- 네비게이션 바 1-->
+    <nav class="navbar fNM z-1" style=" background-color: #4F6F52; height: 60px; position: sticky; top: 0px;">
+      <div class="container-fluid">
+      
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-start" style="background-color: #4F6F52; width: 250px;"tabindex="0" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title ps-3" id="offcanvasNavbarLabel" style="color:#ffffff">Lo'VeaT</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="background-color: #bfbfbf;">
+            <ul class="navbar-nav justify-content-end flex-grow-1 ps-3">
+              <li class="nav-item">
+                <a class="nav-link" 
+                aria-current="page" href="#scrollspyHeading3" style="color:#4F6F52;">ABOUT</a>
+              </li>
+              <!-- 드롭다운 활성화 시 색깔 변경-->
+              <li class="nav-item dropdown mt-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#4F6F52;">
+                  HOT PLACE
+                </a>
+                <ul class="dropdown-menu me-3" style="background-color: #bfbfbf;">
+                  <li><a class="dropdown-item" href="hp/total.html" style="color:#4F6F52;">전체</a></li>
+                   <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li><a class="dropdown-item mt-2" href="hp/se.html" style="color:#4F6F52;">서울</a></li>
+                  <li><a class="dropdown-item mt-1" href="hp/gg.html" style="color:#4F6F52;">경기</a></li>
+                  <li><a class="dropdown-item mt-1" href="hp/in.html" style="color:#4F6F52;">인천</a></li>
+                  <li><a class="dropdown-item mt-1" href="hp/ga.html" style="color:#4F6F52;">강원</a></li>
+                  <li><a class="dropdown-item mt-1" href="hp/ch.html" style="color:#4F6F52;">충청</a></li>
+                  <li><a class="dropdown-item mt-1" href="hp/ho.html" style="color:#4F6F52;">호남</a></li>
+                  <li><a class="dropdown-item mt-1" href="hp/yo.html" style="color:#4F6F52;">영남</a></li>
+                  <li><a class="dropdown-item mt-1" href="hp/je.html" style="color:#4F6F52;">제주</a></li>
+                  <li><a class="dropdown-item mt-1" href="hp/di.html" style="color:#4F6F52;">디저트</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item mt-3">
+                <a class="nav-link" href="cumm.html" style="color:#4F6F52;">COMMUNITY</a>
+           </li>
+            </ul>
+            
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html"  style="color:#ffffff; font-size: 40px; margin: -15px;">
+        Lo'VeaT  
+        </a>
+        <nav class="navbar navbar-expand-lg z-3 fNM" style="position: absolute; margin-left: 61%; top: 3px;">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" style="opacity:0; position: fixed;"
+              data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #ffffff;" href="#scrollspyHeading2">ABOUT</a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color: #ffffff;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    HOT PLACE
+                  </a>
+                  <ul class="dropdown-menu" style="background-color: #bfbfbf;">
+                    <li><a class="dropdown-item" href="hp/total.html" style="color:#4F6F52;">전체</a></li>
+                     <li>
+                      <hr class="dropdown-divider">
+                    </li>
+  
+                    <li><a class="dropdown-item" href="hp/se.html" style="color:#4F6F52;">서울</a></li>
+                    <li><a class="dropdown-item" href="hp/gg.html" style="color:#4F6F52;">경기</a></li>
+                    <li><a class="dropdown-item" href="hp/in.html" style="color:#4F6F52;">인천</a></li>
+                    <li><a class="dropdown-item" href="hp/ga.html" style="color:#4F6F52;">강원</a></li>
+                    <li><a class="dropdown-item" href="hp/ch.html" style="color:#4F6F52;">충청</a></li>
+                    <li><a class="dropdown-item" href="hp/ho.html" style="color:#4F6F52;">호남</a></li>
+                    <li><a class="dropdown-item" href="hp/yo.html" style="color:#4F6F52;">영남</a></li>
+                    <li><a class="dropdown-item" href="hp/je.html" style="color:#4F6F52;">제주</a></li>
+                    <li><a class="dropdown-item" href="hp/di.html" style="color:#4F6F52;">디저트</a></li>
+  
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #ffffff;" href="cumm.html">COMMUNITY</a>
+                </li>
+              </ul>
+    
+            </div>
+          </div>
+        </nav>
+        <a class="navbar-brand" href="login.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-house" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+            </svg>
+        </a>
+      </div>
+    </nav>
+
+
+    <!-- 크루셀1 -->
+    <header id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 text-white fNM"
+            style=" background-image: linear-gradient(to top, #4F6F52, rgba(0,0,0,0.5)), url(main/bg1.jpg); 
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;">
+
+      <h1 class="display-3 fw-bold mb-5 fNM">Love Vegetable Eat</h1>
+      <h4 class="fs-2 mb-3 fNM">채식주의자도</h4>
+      <h4 class="fs-2 mb-5 fNM">맛있는 외식을 할 수 있다</h4>
+      <p class="lead mb-3 fNM">채식주의자를 위한 전국 각지의 맛집 소개</p>
+      <a href="hp/total.html"><button type="button" class="btn rounded-pill" style="color: #F4CE14; border: 2px solid #F4CE14;">맛집 바로가기</button></a>
+
+    </header>
+
+
+    <!-- 네비게이션 바 2-->
+    <nav id="navbar-example2" class="navbar justify-content-around align-items-center fNM" style="background-color: #4F6F52; position: sticky; top: 60px;">
+    
+    <ul class="nav nav-tabs fNM" style="font-size: 18px;">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1" style="color:#ffffff;">About Vegetarianism</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2" style="color:#ffffff;">Type of vegetarianism</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading3" style="color:#ffffff;">About Lo'VeaT</a>
+      </li>
+    </ul>
+  </nav>
+
+    <!-- 네비게이션 바 2 내용-->
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example rounded-1 fNM" tabindex="0">
+    <h4 id="scrollspyHeading1" style="margin: auto; background-color: #4F6F52; color:#ffffff; padding: 20px; text-align: center;">About Vegetarianism</h4>
+    <div style="margin: auto; padding: 20px; background-color: #dfdfdf;">
+      <div class="container-fluid" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="row" >
+          <div class="col-md-2"></div>
+          <div class="col-md-8"> 
+            최근에는 다양한 이유로 ‘채식’을 실천하는 사람이 많아지고 있는 추세이며, 이에 따라 요식업과 외식업에서의 비건 식품 비중이 증가하고 있습니다. 
+            채식주의는 인간이 동물성을 먹는 것을 피하고, 식물성 음식만을 먹는 것을 뜻합니다. 채식주의를 실천하는 정도에 따라서 동물성 음식을 섭취하기도 합니다.
+            <br> 아래 채식주의의 다양한 타입과 그에 대한 설명을 적어두었습니다. 읽어보고 본인이 추구하는 채식주의에 대해 생각해보는 시간을 가지는 것도 좋을 것 같습니다.
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+    <h4 id="scrollspyHeading2" style="margin: auto; background-color: #4F6F52; color:#ffffff; padding: 20px; text-align: center;">Type of vegetarianism</h4>
+    <div style="margin: auto; padding: 20px; background-color: #dfdfdf;">
+      <div class="container text-center"  style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3" >
+          <div class="col" >
+            <div class="p-3" >
+              <img src="main/pic1.png" style="width: 100%;" alt="프루테리언"> <hr style="color:#4F6F52; "> 
+              <div style="border: 2px solid #4F6F52; padding-top: 5px; padding-bottom: 5px;">프루테리언</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <img src="main/pic2.png" style="width: 100%;" alt="비건"> <hr style="color:#4F6F52; "> 
+              <div style="border: 2px solid #4F6F52; padding-top: 5px; padding-bottom: 5px;">비건</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <img src="main/pic3.png" style="width: 100%;" alt="락토 베지테리언"> <hr style="color:#4F6F52; "> 
+              <div style="border: 2px solid #4F6F52; padding-top: 5px; padding-bottom: 5px;">락토 베지테리언</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <img src="main/pic4.png" style="width: 100%;" alt="오보 베지테리언"> <hr style="color:#4F6F52; "> 
+              <div style="border: 2px solid #4F6F52; padding-top: 5px; padding-bottom: 5px;">오보 베지테리언</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <img src="main/pic5.png" style="width: 100%;" alt="락토 오보 베지테리언"> <hr style="color:#4F6F52; "> 
+              <div style="border: 2px solid #4F6F52; padding-top: 5px; padding-bottom: 5px;">락토 오보 베지테리언</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <img src="main/pic6.png" style="width: 100%;" alt="페스코 베지테리언"> <hr style="color:#4F6F52; "> 
+              <div style="border: 2px solid #4F6F52; padding-top: 5px; padding-bottom: 5px;">페스코 베지테리언</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <img src="main/pic7.png" style="width: 100%;" alt="폴로 베지테리언"> <hr style="color:#4F6F52; "> 
+              <div style="border: 2px solid #4F6F52; padding-top: 5px; padding-bottom: 5px;">폴로 베지테리언</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <img src="main/pic8.png" style="width: 100%;" alt="플렉시테리언"> <hr style="color:#4F6F52; "> 
+              <div style="border: 2px solid #4F6F52; padding-top: 5px; padding-bottom: 5px;">플렉시테리언</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <h4 id="scrollspyHeading3" style="margin: auto; background-color: #4F6F52; color:#ffffff; padding: 20px; text-align: center;">About Lo'VeaT</h4>
+    <div style="margin: auto; padding: 20px; background-color: #dfdfdf;">
+      <div class="container-fluid"  style="padding-bottom: 20px;">
+        <div class="row" >
+          <div class="col-md-1"></div>
+          <div class="col-md-6"> 
+            <img src="main/lo.png" class="w-100 " alt="about"> </div>
+          <div class="col-md-4" style="padding-top: 30px;"> 
+              채식을 사랑하고, 채식을 실천하는 사람들이라는 뜻을 담아 Lo’VeaT 이라는 이름의 홈페이지를 제작하게 되었습니다.
+              채식주의를 시도하는 많은 사람들이 간단하게, 다양한 비건 식당을 다닐 수 있도록 하였습니다.
+              더 나아가 채식주의를 실천하는 사람들 간의 다양한 비건 실천 팁을 공유할 수 있도록 소통 공간을 만들었습니다.
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 커뮤 바로가기-->
+
+  <div class="card text-center fNM" style="margin: 30px;">
+    <div class="card-body " style="background-color: #4F6F52; color: #ffffff;">
+      <h3 class="card-title">채식주의자와의 만남</h3>
+      <p class="card-text">맛집에 대한 후기 및 채식 실천 후기 남기러 가기</p>
+      <a href="cumm.html" class="btn rounded-pill" style="background-color: #F4CE14; color: #ffffff; border: 2px solid #ffffff;">커뮤니티 바로가기</a>
+    </div>
+  </div>
+
+
+
+    <!-- 하단 탑 버튼 -->
+    <a class="btn" href="#top" role="button" style="left:100%; margin-right:20px; position: sticky; bottom: 20px;"> 
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4F6F52" class="bi bi-chevron-bar-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z"/>
+      </svg>
+    </a>
+
+    <!-- 엔딩 -->
+    <div class="p-3 mb-2 fNM" style="text-align: center; color:#ffffff; background-color: #4F6F52;">
+      contact : 010-1111-2222 / aaa@gamil.com <br> Copyright &copy; 2023 Designed by Lo'VeaT
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
